@@ -1,0 +1,160 @@
+#section-catalog {
+    background-image: url("/images/bg/hits-bg.png");
+    background-repeat: no-repeat;
+    background-position: 50vw 50px;
+    height: 1500px;
+
+    h3 {
+        max-width: 490px;
+        text-align: right;
+        font: 36px "Playfair-bold";
+        color: $accent-color;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    h2 {
+        font: 36px "Playfair-regular";
+        width: 100%;
+        text-align: center;
+        padding: 5px 0 20px;
+    }
+
+    .wrapper>h2 {
+        margin-top: 50px;
+    }
+
+    .order__panel {
+        margin: 100px auto 0;
+        max-width: 1085px;
+        height: 150px;
+        background-color: $second-accent-color;
+        border-radius: 15px;
+
+        .order__panel-select {
+            width: 100%;
+            height: 80px;
+            border-radius: 15px;
+            background-color: $select-panel-bg;
+        }
+    }
+
+    .catalog-hits {
+        margin-top: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px 75px;
+        position: relative;
+    }
+
+    .hits__card {
+        background-color: #fff;
+        border-radius: 15px;   
+        padding-bottom: 20px;
+        position: relative;
+        
+
+        img {
+            padding: 15px;
+        }
+
+
+        p {
+            width: 100%;
+            font: 34px "Source-light";
+            color: #000;
+            text-align: center;
+
+            span {
+                font: 20px/30px "Source";
+                text-decoration: line-through;
+                margin-left: 10px;
+            }
+        }
+
+        p:last-of-type {
+            margin-top: 10px;
+            font: 16px "Source-light";
+        }
+
+        .favorits {
+            background-image: url("/images/svg/heart.svg");
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 28px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+
+        .hits__card-label {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font: 15px "Source-bold";
+            padding: 6px 20px;
+            background-color: $accent-color;
+            text-transform: uppercase;
+            border-radius: 200px;
+            border: 3px solid #fff;
+        }
+
+        .hits__card-label-water{
+            @extend .hits__card-label;
+            background-color: $select-color; 
+            
+            span {
+                padding-left: 5px;
+                position: relative;
+
+                &::before {
+                    content: url("/images/svg/drop-water.svg");
+                    position: absolute;
+                    top: 2px;
+                    left: -10px;
+                }
+            }
+        }
+
+        .hits__card-label-new {
+            @extend .hits__card-label;
+            background-color: $third-accent-color;
+
+            span {
+                padding-left: 10px;
+                position: relative;
+
+                &::before {
+                    content: url("/images/svg/tree.svg");
+                    position: absolute;
+                    top: 2px;
+                    left: -10px;
+                }
+            }            
+        }
+    }
+
+    .button__more {
+        width: 100%;
+        display: flex;
+
+        button {
+            padding: 15px 30px;
+            margin: 20px auto;
+            background-color: transparent;
+            border: 3px solid #fff;
+            font: 16px/20px "Source";
+            color: $font-color;
+            border-radius: 15px;
+            text-transform: uppercase;
+            transition: background-color 0.4s ;
+
+            &:hover {
+                background-color: $select-color;
+            }
+        }
+    }
+}

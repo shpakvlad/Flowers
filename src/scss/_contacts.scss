@@ -1,0 +1,132 @@
+#contacts-clients {
+    background-image: url("../images/bg/contacys-bg.png");
+    background-repeat: no-repeat;
+
+    // padding-bottom: 320px;
+
+    h3 {
+        max-width: 1000px;
+        text-align: right;
+        font: 36px "Playfair-bold";
+        color: $accent-color;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    .panels {
+        max-width: 1440px;
+        margin: 140px auto 0;
+        padding: 0 120px;
+        background-color: $second-accent-color;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .contacts__panel {
+            max-width: 416px;
+
+            h5 {
+                margin-top: 36px;
+                font: 32px "Source";
+
+
+                span {
+                    font: 32px "Source-bold";
+
+                }
+            }
+        }
+
+        .contacts__inputs {
+            margin: 40px 0 85px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            input {
+                max-width: 416px;
+                height: 70px;
+                padding: 22px 36px;
+                border-radius: 15px;
+                border: none;
+                font: 30px "Source-bold";
+            }
+
+            button {
+                padding: 16px 106px;
+                background-color: $accent-color;
+                color: $font-color;
+
+                font: 24px "Source";
+                border-radius: 15px;
+                border: none;
+                transition: background-color 0.4s;
+
+                &:hover {
+                    background-color: $select-color;
+                }
+            }
+        }
+
+        .contacts__panel-info {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            h5 {
+                margin: 40px 0;
+                font: 32px "Source";
+            }
+
+            .info__text {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                font: 20px "Source";
+
+                p {
+                    span {
+                        font: 20px "Source-bold";
+                    }
+                }
+            }
+        }
+    }
+
+    h3:last-of-type {
+        margin-top: 120px;
+        padding-right: 350px;
+        margin-left: auto;
+        float: right;
+        font: 36px "Playfair-bold";
+        color: $accent-color;
+        border-bottom: 2px solid $accent-color;
+        margin-bottom: 170px;
+    }
+
+    .swiper {
+        clear: both;
+    }
+
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    .swiper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .swiper-navigation {
+        margin: 0 auto;
+        position: relative;
+        top:-170px;
+        max-width: 1400px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $accent-color;
+    }
+
+
+}

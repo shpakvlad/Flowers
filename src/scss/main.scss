@@ -1,0 +1,51 @@
+@import "vars";
+@import "colors";
+@import "fonts";
+
+@import "header";
+@import "hero";
+@import "catalog";
+@import "futures";
+@import "contacts";
+@import "footer";
+
+/************************************************/
+/*                    BASIC                     */
+/************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+    &:focus {
+        border: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+
+    max-height: 100%;
+    // overflow-x: hidden;
+
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1140px;
+
+    // display: grid;
+    // grid-template-columns: repeat(12, 110px);
+    // gap: 0 16px;
+}
+
+section {
+    padding: 50px 0 44px ;
+}

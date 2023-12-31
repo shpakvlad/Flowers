@@ -1,0 +1,79 @@
+#section-hero {
+    background-image: url("/images/bg/hero-bg2.png");
+    background-repeat: no-repeat;
+    background-position: 45vw 150px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__block {
+        margin-top: 60px;
+
+        p {
+            margin-left: 110px;
+            margin-top: 20px;
+            font: 24px "Source";
+            text-transform: capitalize;
+        }
+    }
+
+    h1 {
+        font: 86px/94px "Playfair-regular";
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    h2 {
+        font: 48px/60px "Playfair-italic";
+        color: $accent-color;
+    }
+
+    .hero__block-text {
+        margin-left: 110px;
+        display: flex;
+        align-items:end;
+
+        h2 {
+            padding-left: 24px;
+        }
+    }
+
+    button {
+        margin-left: 110px;
+        margin-top: 42px;
+        width: 450px;
+        padding: 16px 126px;
+        background-color: $accent-color;
+        color: $font-color;
+
+        font: 24px "Source";
+        border-radius: 15px;
+        border: none;
+        transition: background-color 0.4s;
+
+        &:hover {
+            background-color: $select-color;
+        }
+    }
+
+    .additon-banner {
+        display: flex;
+        gap: 0 124px;
+        margin: 400px auto 0;
+
+        .additon-banner-block {
+            max-width: 200px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font: 16px "Source";
+            }
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+header {
+    padding-top: 24px;
+
+    .wrapper {
+        display: flex;
+        // max-width: 100%;
+
+        nav {
+            padding-top: 20px;
+            display: flex;
+            gap: 0 32px;
+            margin-left: auto;
+
+            transition: color 0.4s;
+
+            a {
+                color: $font-color;
+                font: 20px "Source"; 
+                
+                &:hover {
+                    color: $select-color;
+                }
+            }
+        }
+    }
+}
