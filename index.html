@@ -1,340 +1,376 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Document</title>
 
-    
-    <link rel="stylesheet" href="./css/main.min.css?_v=20240102183247" type="text/css">
+        <link rel="stylesheet" href="/css/main.min.css?_v=20240102184726" type="text/css">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240102183247">
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <img src="./images/logo/logo.svg" alt="Logo">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240102184726">
 
-        <nav>
-          <a href="#">Головна</a>
-          <a href="#">Каталог</a>
-          <a href="#">Про нас</a>
-          <a href="#">Як замовити</a>
-          <a href="#">Відгуки </a>
-          <a href="#">Контакти </a>
-        </nav>
-      </div>
-    </header>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ShoppingCenter",
+                "name": "Vladyslav Shpakov",
+                "image": "",
+                "@id": "",
+                "url": "",
+                "telephone": "+37062460972",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Rumpeskes,45",
+                    "addressLocality": "Klaipėda",
+                    "postalCode": "91129",
+                    "addressCountry": "LT"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 55.7061506,
+                    "longitude": 21.1465743
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday"
+                        ],
+                        "opens": "08:00",
+                        "closes": "21:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Saturday",
+                        "opens": "08:00",
+                        "closes": "23:00"
+                    }
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <img src="/images/logo/logo.svg" alt="Logo">
 
-    <main>
-      <section id="section-hero">
-        <div class="wrapper">
-          <div class="hero__block">
-            <h2>Неймовірні</h2>
-            <div class="hero__block-text">
-              <h1>Букети</h1>
-              <h2>зі свіжих квітів</h2>
+                <nav>
+                    <a href="#">Головна</a>
+                    <a href="#">Каталог</a>
+                    <a href="#">Про нас</a>
+                    <a href="#">Як замовити</a>
+                    <a href="#">Відгуки </a>
+                    <a href="#">Контакти </a>
+                </nav>
             </div>
-            <p>З доставкою по Києву протягом 1 години</p>
-          </div>
-          <button type="button">ЗАМОВИТИ КВІТИ</button>
+        </header>
 
-          <div class="additon-banner">
-            <div class="additon-banner-block">
-              <img src="./images/svg/flower.svg" alt="">
-              <p>Щоденне оновлення свіжих квітів</p>
+        <main>
+            <section id="section-hero">
+                <div class="wrapper">
+                    <div class="hero__block">
+                        <h2>Неймовірні</h2>
+                        <div class="hero__block-text">
+                            <h1>Букети</h1>
+                            <h2>зі свіжих квітів</h2>
+                        </div>
+                        <p>З доставкою по Києву протягом 1 години</p>
+                    </div>
+                    <button type="button">ЗАМОВИТИ КВІТИ</button>
+
+                    <div class="additon-banner">
+                        <div class="additon-banner-block">
+                            <img src="/images/svg/flower.svg" alt="">
+                            <p>Щоденне оновлення свіжих квітів</p>
+                        </div>
+                        <div class="additon-banner-block">
+                            <img src="/images/svg/map-dot.svg" alt="">
+                            <p>безкоштовна доставка в будь яку точку міста</p>
+                        </div>
+                        <div class="additon-banner-block">
+                            <img src="/images/svg/earth.svg" alt="">
+                            <p>більше 1000 сортів квітів з усього світу</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-catalog">
+                <h3>Каталог</h3>
+                <div class="wrapper">
+                    <div class="order__panel">
+                        <h2>Доставка квітів в Києві</h2>
+
+                        <div class="order__panel-select"></div>
+                    </div>
+
+                    <h2>Хіт продажів</h2>
+                    <div class="catalog-hits">
+                        <div class="hits__card">
+                            <picture><source srcset="/images.webp/gallery-1.webp" type="image/webp"><img src="/images/png/gallery-1.png" alt=""></picture>
+                            <p>500&#8372;<span>700&#8372;</span></p>
+                            <p>Мінібукет 1400-2</p>
+                            <div class="favorits"></div>
+                            <div class="hits__card-label">Акція</div>
+                        </div>
+                        <div class="hits__card">
+                            <picture><source srcset="/images.webp/gallery-2.webp" type="image/webp"><img src="/images/png/gallery-2.png" alt=""></picture>
+                            <p>800&#8372;</p>
+                            <p>Мінібукет 1600-6</p>
+                            <div class="favorits"></div>
+                        </div>
+                        <div class="hits__card">
+                            <picture><source srcset="/images.webp/gallery-3.webp" type="image/webp"><img src="/images/png/gallery-3.png" alt=""></picture>
+                            <p>1000&#8372;</p>
+                            <p>Троянда Freedom 51 шт.</p>
+                            <div class="favorits"></div>
+                        </div>
+                        <div class="hits__card">
+                            <picture><source srcset="/images.webp/gallery-4.webp" type="image/webp"><img src="/images/png/gallery-4.png" alt=""></picture>
+                            <p>680&#8372;</p>
+                            <p>Мінібукет 1400-3</p>
+                            <div class="favorits"></div>
+                        </div>
+                        <div class="hits__card">
+                            <picture><source srcset="/images.webp/gallery-5.webp" type="image/webp"><img src="/images/png/gallery-5.png" alt=""></picture>
+                            <p>450&#8372;</p>
+                            <p>«Бархатний сезон»</p>
+                            <div class="favorits"></div>
+                            <div class="hits__card-label-new">
+                                <span>Новинка</span>
+                            </div>
+                        </div>
+                        <div class="hits__card">
+                            <picture><source srcset="/images.webp/gallery-6.webp" type="image/webp"><img src="/images/png/gallery-6.png" alt=""></picture>
+                            <p>500&#8372;<span>700&#8372;</span></p>
+                            <p>Мінібукет 1400-2</p>
+                            <div class="favorits"></div>
+                            <div class="hits__card-label-water">
+                                <span> водою</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button__more">
+                        <button type="button">Дивитись всі</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-futures">
+                <h3>Якість в деталях</h3>
+                <div class="future one">
+                    <picture><source srcset="/images.webp/flower1.webp" type="image/webp"><img src="/images/png/flower1.png" alt=""></picture>
+
+                    <div class="future__text">
+                        <h4>Контроль свіжості квітів</h4>
+                        <p class="future__text-desc">
+                            Ми співпрацюємо з кращими постачальниками квітів і
+                            готові запропонувати Вам
+                            <span> широкий асортимент квітів,</span> починаючи
+                            від місцевих сортів і закінчуючи рідкісними
+                            імпортованими варіантами. Ваша близька людина
+                            отримає найкращий подарунок, адже ми ретельно
+                            підбираємо кожну квітку для вашого букету.
+                        </p>
+                    </div>
+                </div>
+                <div class="future-left two">
+                    <picture><source srcset="/images.webp/flower2.webp" type="image/webp"><img src="/images/png/flower2.png" alt=""></picture>
+
+                    <div class="future__text">
+                        <h4>Оформлення букетів</h4>
+                        <p class="future__text-desc">
+                            Ми готові зібрати
+                            <span>унікальний букет по ндивідуальному
+                                замовленню.</span>
+                            Наші флористи втілять в життя будь яку Вашу ідею!
+                        </p>
+                    </div>
+                </div>
+                <div class="future three">
+                    <picture><source srcset="/images.webp/flower3.webp" type="image/webp"><img src="/images/png/flower3.png" alt=""></picture>
+
+                    <div class="future__text">
+                        <h4>Швидка доставка</h4>
+                        <p class="future__text-desc">
+                            Ми робимо доставки по Україні протягом
+                            <span>3-х годин</span> з моменту оплати замовлення.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts-clients">
+                <h3>Не можете визначитись з вибором букету?</h3>
+
+                <div class="panels">
+                    <div class="contacts__panel">
+                        <h5>
+                            <span>Відправте заявку <br></span> і Вам
+                            зателефонують протягом однієї хвилини
+                        </h5>
+
+                        <div class="contacts__inputs">
+                            <input type="text" name="name" id="input__name" placeholder="Ім’я">
+                            <input type="tel" name="phone" id="input__phone" placeholder="Телефон">
+                            <button type="button">Залишити заявку</button>
+                        </div>
+                    </div>
+
+                    <div class="contacts__panel-info">
+                        <h5>Наш менеджер по телефону:</h5>
+
+                        <div class="info__text">
+                            <img src="/images/svg/check.svg" alt="">
+                            <p><span>Відповість</span> на будь які запитання</p>
+                        </div>
+                        <div class="info__text">
+                            <img src="/images/svg/check.svg" alt="">
+                            <p>
+                                <span>Підбере рішення</span> відповідно <br>
+                                до ваших запитів та бажань
+                            </p>
+                        </div>
+                        <div class="info__text">
+                            <img src="/images/svg/check.svg" alt="">
+                            <p>
+                                <span>Підготує унікальну пропозицію <br>
+                                </span>
+                                та детально розповість Вам про наші букети
+                            </p>
+                        </div>
+                        <div class="info__text">
+                            <img src="/images/svg/check.svg" alt="">
+                            <p>
+                                <span>Оформить</span> для Вас подарунок-сюрприз
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Наші клієнти</h3>
+
+                
+                
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo1.png" alt="" srcset="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo2.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo3.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo4.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo2.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo3.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/png/photo4.png" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+                <div class="swiper-navigation">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <hr noshade="noshade">
+
+                <div class="footer__content">
+                    <div class="footer__left">
+                        <a href="#">Головна</a>
+                        <a href="#">Каталог</a>
+                        <a href="#">Відгуки</a>
+                        <a href="#">Як замовити</a>
+                        <a href="#">Контакти</a>
+                    </div>
+
+                    <div class="footer__center">
+                        <img src="/images/logo/logo-big.svg" alt="" srcset="">
+
+                        <div class="footer__center-logo-panel">
+                            <img src="/images/svg/phone-icon.svg" alt="">
+                            <img src="/images/svg/insta-icon.svg" alt="">
+                            <img src="/images/svg/facebook-icon.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-phone">
+                            <p>
+                                +38097 777 55 77 <br>
+                                Наш телефон
+                            </p>
+                        </div>
+                        <div class="footer__right-mail">
+                            <p>
+                                info@floverlover.ua <br>
+                                Контактний е-mail
+                            </p>
+                        </div>
+                        <div class="footer__right-address">
+                            <p>
+                                Київ <br>
+                                вул. Маріупольська, 14. <br>
+                                Наш магазин
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="additon-banner-block">
-              <img src="./images/svg/map-dot.svg" alt="">
-              <p>безкоштовна доставка в будь яку точку міста</p>
-            </div>
-            <div class="additon-banner-block">
-              <img src="./images/svg/earth.svg" alt="">
-              <p>більше 1000 сортів квітів з усього світу</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </footer>
 
-      <section id="section-catalog">
-        <h3>Каталог</h3>
-        <div class="wrapper">
-          <div class="order__panel">
-            <h2>Доставка квітів в Києві</h2>
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-            <div class="order__panel-select"></div>
-          </div>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                // freeMode: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 'auto',
+                spaceBetween: 18,
+                // slidesPerGroup: 4,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
 
-          <h2>Хіт продажів</h2>
-          <div class="catalog-hits">
-            <div class="hits__card">
-              <picture><source srcset="./images.webp/gallery-1.webp" type="image/webp"><img src="./images/png/gallery-1.png" alt=""></picture>
-              <p>500&#8372;<span>700&#8372;</span></p>
-              <p>Мінібукет 1400-2</p>
-              <div class="favorits"></div>
-              <div class="hits__card-label">Акція</div>
-            </div>
-            <div class="hits__card">
-              <picture><source srcset="./images.webp/gallery-2.webp" type="image/webp"><img src="./images/png/gallery-2.png" alt=""></picture>
-              <p>800&#8372;</p>
-              <p>Мінібукет 1600-6</p>
-              <div class="favorits"></div>
-            </div>
-            <div class="hits__card">
-              <picture><source srcset="./images.webp/gallery-3.webp" type="image/webp"><img src="./images/png/gallery-3.png" alt=""></picture>
-              <p>1000&#8372;</p>
-              <p>Троянда Freedom 51 шт.</p>
-              <div class="favorits"></div>
-            </div>
-            <div class="hits__card">
-              <picture><source srcset="./images.webp/gallery-4.webp" type="image/webp"><img src="./images/png/gallery-4.png" alt=""></picture>
-              <p>680&#8372;</p>
-              <p>Мінібукет 1400-3</p>
-              <div class="favorits"></div>
-            </div>
-            <div class="hits__card">
-              <picture><source srcset="./images.webp/gallery-5.webp" type="image/webp"><img src="./images/png/gallery-5.png" alt=""></picture>
-              <p>450&#8372;</p>
-              <p>«Бархатний сезон»</p>
-              <div class="favorits"></div>
-              <div class="hits__card-label-new">
-                <span>Новинка</span>
-              </div>
-            </div>
-            <div class="hits__card">
-              <picture><source srcset="./images.webp/gallery-6.webp" type="image/webp"><img src="./images/png/gallery-6.png" alt=""></picture>
-              <p>500&#8372;<span>700&#8372;</span></p>
-              <p>Мінібукет 1400-2</p>
-              <div class="favorits"></div>
-              <div class="hits__card-label-water">
-                <span> водою</span>
-              </div>
-            </div>
-          </div>
+                keyboard: true,
+                onlyInViewport: true,
+            });
+        </script>
 
-          <div class="button__more">
-            <button type="button">Дивитись всі</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-futures">
-        <h3>Якість в деталях</h3>
-        <div class="future one">
-          <picture><source srcset="./images.webp/flower1.webp" type="image/webp"><img src="./images/png/flower1.png" alt=""></picture>
-
-          <div class="future__text">
-            <h4>Контроль свіжості квітів</h4>
-            <p class="future__text-desc">
-              Ми співпрацюємо з кращими постачальниками квітів і готові
-              запропонувати Вам
-              <span> широкий асортимент квітів,</span> починаючи від місцевих
-              сортів і закінчуючи рідкісними імпортованими варіантами. Ваша
-              близька людина отримає найкращий подарунок, адже ми ретельно
-              підбираємо кожну квітку для вашого букету.
-            </p>
-          </div>
-        </div>
-        <div class="future-left two">
-          <picture><source srcset="./images.webp/flower2.webp" type="image/webp"><img src="./images/png/flower2.png" alt=""></picture>
-
-          <div class="future__text">
-            <h4>Оформлення букетів</h4>
-            <p class="future__text-desc">
-              Ми готові зібрати
-              <span>унікальний букет по ндивідуальному замовленню.</span>
-              Наші флористи втілять в життя будь яку Вашу ідею!
-            </p>
-          </div>
-        </div>
-        <div class="future three">
-          <picture><source srcset="./images.webp/flower3.webp" type="image/webp"><img src="./images/png/flower3.png" alt=""></picture>
-
-          <div class="future__text">
-            <h4>Швидка доставка</h4>
-            <p class="future__text-desc">
-              Ми робимо доставки по Україні протягом
-              <span>3-х годин</span> з моменту оплати замовлення.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacts-clients">
-        <h3>Не можете визначитись з вибором букету?</h3>
-
-        <div class="panels">
-          <div class="contacts__panel">
-            <h5>
-              <span>Відправте заявку <br></span> і Вам зателефонують протягом
-              однієї хвилини
-            </h5>
-
-            <div class="contacts__inputs">
-              <input type="text" name="name" id="input__name" placeholder="Ім’я">
-              <input type="tel" name="phone" id="input__phone" placeholder="Телефон">
-              <button type="button">Залишити заявку</button>
-            </div>
-          </div>
-
-          <div class="contacts__panel-info">
-            <h5>Наш менеджер по телефону:</h5>
-
-            <div class="info__text">
-              <img src="./images/svg/check.svg" alt="">
-              <p><span>Відповість</span> на будь які запитання</p>
-            </div>
-            <div class="info__text">
-              <img src="./images/svg/check.svg" alt="">
-              <p>
-                <span>Підбере рішення</span> відповідно <br>
-                до ваших запитів та бажань
-              </p>
-            </div>
-            <div class="info__text">
-              <img src="./images/svg/check.svg" alt="">
-              <p>
-                <span>Підготує унікальну пропозицію <br> </span> та детально
-                розповість Вам про наші букети
-              </p>
-            </div>
-            <div class="info__text">
-              <img src="./images/svg/check.svg" alt="">
-              <p><span>Оформить</span> для Вас подарунок-сюрприз</p>
-            </div>
-          </div>
-        </div>
-
-        <h3>Наші клієнти</h3>
-
-        
-        
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo1.webp," type="image/webp"><img src="./images/png/photo1.png" alt="" srcset=""></picture>
-            </div>
-
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo2.webp," type="image/webp"><img src="./images/png/photo2.png" alt="" srcset=""></picture>
-            </div>
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo3.webp," type="image/webp"><img src="./images/png/photo3.png" alt="" srcset=""></picture>
-            </div>
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo4.webp," type="image/webp"><img src="./images/png/photo4.png" alt="" srcset=""></picture>
-            </div>
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo2.webp," type="image/webp"><img src="./images/png/photo2.png" alt="" srcset=""></picture>
-            </div>
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo3.webp," type="image/webp"><img src="./images/png/photo3.png" alt="" srcset=""></picture>
-            </div>
-            <div class="swiper-slide">
-              <picture><source srcset="./images.webp/photo4.webp," type="image/webp"><img src="./images/png/photo4.png" alt="" srcset=""></picture>
-            </div>
-          </div>
-
-          
-        </div>
-        
-        <div class="swiper-navigation">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        
-      </section>
-    </main>
-
-    <footer>
-      <div class="wrapper">
-        <hr noshade="noshade">
-
-        <div class="footer__content">
-
-          <div class="footer__left">
-            <a href="#">Головна</a>
-            <a href="#">Каталог</a>
-            <a href="#">Відгуки</a>
-            <a href="#">Як замовити</a>
-            <a href="#">Контакти</a>
-          </div>
-
-
-          <div class="footer__center">
-            <img src="./images/logo/logo-big.svg" alt="" srcset="">
-
-            <div class="footer__center-logo-panel">
-              <img src="./images/svg/phone-icon.svg" alt="">
-              <img src="./images/svg/insta-icon.svg" alt="">
-              <img src="./images/svg/facebook-icon.svg" alt="">
-            </div>
-
-          </div>
-
-          <div class="footer__right">
-
-            <div class="footer__right-phone">
-              <p>+38097 777 55 77 <br> 
-                Наш телефон</p>
-            </div>
-            <div class="footer__right-mail">
-              <p>info@floverlover.ua <br>
-                Контактний е-mail</p>
-            </div>
-            <div class="footer__right-address">
-              <p>Київ <br>
-                вул. Маріупольська, 14. <br>
-                Наш магазин</p>
-            </div>
-
-
-
-
-          </div>
-
-
-
-        </div>
-
-
-
-      </div>
-
-
-
-
-    </footer>
-
-    <script type="module">
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
-      const swiper = new Swiper('.swiper', {
-        loop: true,
-        // freeMode: true,
-        speed: 1000,
-        autoplay: {
-          delay: 3000,
-        },
-        slidesPerView: 'auto',
-        spaceBetween: 18,
-        // slidesPerGroup: 4,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        keyboard: true,
-        onlyInViewport: true,
-      });
-    </script>
-
-    <script defer="defer" src="./js/main.min.js?_v=20240102183247" type="module"></script>
-  </body>
+        <script defer="defer" src="/js/main.min.js?_v=20240102184726" type="module"></script>
+    </body>
 </html>
