@@ -1,5 +1,5 @@
 #section-catalog {
-    background-image: url("../images/bg/hits-bg.png");
+    background-image: url("../images/catalog/hits-bg.png");
     background-repeat: no-repeat;
     background-position: 50vw 50px;
     height: 1500px;
@@ -79,7 +79,7 @@
         }
 
         .favorits {
-            background-image: url("../images/svg/heart.svg");
+            background-image: url("../images/catalog/heart.svg");
             background-repeat: no-repeat;
             width: 30px;
             height: 28px;
@@ -111,7 +111,7 @@
                 position: relative;
 
                 &::before {
-                    content: url("../images/svg/drop-water.svg");
+                    content: url("../images/catalog/drop-water.svg");
                     position: absolute;
                     top: 2px;
                     left: -10px;
@@ -128,7 +128,7 @@
                 position: relative;
 
                 &::before {
-                    content: url("../images/svg/tree.svg");
+                    content: url("../images/catalog/tree.svg");
                     position: absolute;
                     top: 2px;
                     left: -10px;
