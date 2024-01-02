@@ -1,50 +1,64 @@
-// core version + navigation, pagination modules:
-// import Swiper from 'swiper/swiper-bundle';
+/**
+ * !(i)
+ * Код попадает в итоговый файл, только когда вызвана функция, например FLSFunctions.spollers();
+ * Или когда импортирован весь файл, например import "files/script.js";
+ * Неиспользуемый код в итоговый файл не попадает.
 
+ * Если мы хотим добавить модуль следует его раскомментировать
+ */
+// import MousePRLX from './libs/parallaxMouse'
+// import AOS from 'aos'
+// import Swiper, { Navigation, Pagination } from 'swiper';
 
-// import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-// import 'swiper/css/bundle';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import BaseHelpers from './helpers/BaseHelpers';
+// import PopupManager from './modules/PopupManager';
+// import BurgerMenu from './modules/BurgerMenu';
+// import Tabs from './modules/Tabs';
+// import Accordion from './modules/Accordion';
 
-// init Swiper:
-// const swiper = new Swiper('.swiper', {
-//   // configure Swiper to use modules
-// //   modules: [Navigation, Pagination],
+BaseHelpers.checkWebpSupport();
+
+// BaseHelpers.addTouchClass();
+
+// BaseHelpers.addLoadedClass();
+
+// BaseHelpers.headerFixed();
+
+/**
+ * Открытие/закрытие модальных окон
+ * Чтобы модальное окно открывалось и закрывалось
+ * На окно повешай атрибут data-popup="<название окна>"
+ * На кнопку, которая вызывает окно повешай атрибут data-type="<название окна>"
+
+ * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
+ * На кнопку для закрытия окна добавь класс '.button-close'
+ * */
+// new PopupManager();
+
+/**
+ *  Модуль для работы с меню (Бургер)
+ * */
+// new BurgerMenu().init();
+
+/**
+ *  Библиотека для анимаций
+ *  документация: https://michalsnik.github.io/aos
+ * */
+// AOS.init();
+
+/**
+ * Параллакс мышей
+ * */
+// new MousePRLX();
+
+// new Tabs('tabs-example', {
+// 	onChange: (data) => {
+// 		console.log(data);
+// 	},
 // });
 
-// const swiper = new Swiper(".swiper", {
-//     direction: "horizontal",
-//     loop: true,
-//     autoHeigh: true,
-//     freeMode: true,
-//     speed: 1000,
-//     autoplay: {
-//         delay: 3000,
-//     },
-//     slidesPerView: 3,
-//     spaceBetween: 30,
-//     centerdSlaides: true,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-
-//     keyboard: true,
-//     onlyInViewport: true,
-
-//     // effect: "coverflow",
-//     // coverflowEffect: {
-//     //     depth: 200,
-//     //     modifier: 0.7,
-//     //     rotate: 50,
-//     //     stretch: 100,
-
-//     //     slideShadows: true,
-//     // }
+// new Accordion('.accordion', {
+// 	shouldOpenAll: false, // true
+// 	defaultOpen: [], // [0,1]
+// 	collapsedClass: 'open',
 // });
